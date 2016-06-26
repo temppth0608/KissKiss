@@ -1,0 +1,6 @@
+framework module Pods_KissKiss {
+  umbrella header "Pods-KissKiss-umbrella.h"
+
+  export *
+  module * { export * }
+}

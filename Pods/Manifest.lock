@@ -1,0 +1,28 @@
+PODS:
+  - AsyncSwift (1.7.2)
+  - SwiftDate (3.0.8)
+  - SwiftValidator (3.0.1)
+
+DEPENDENCIES:
+  - AsyncSwift
+  - SwiftDate
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, tag `4.0.0`)
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.0.0
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :git: https://github.com/jpotts18/SwiftValidator.git
+    :tag: 4.0.0
+
+SPEC CHECKSUMS:
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+  SwiftValidator: 461a2c00173f001287a8fa1f12704b87ec8a6bc4
+
+PODFILE CHECKSUM: 30562bfd6d2500c01d1cd3070edfd80209fa48f2
+
+COCOAPODS: 1.0.0.rc.1

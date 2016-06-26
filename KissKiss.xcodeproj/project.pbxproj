@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2015683007FE7288D39F5A6 /* Pods_KissKiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */; };
 		E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E51D1FB297008D7C41 /* AppDelegate.swift */; };
 		E82940E81D1FB297008D7C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E71D1FB297008D7C41 /* ViewController.swift */; };
 		E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940E91D1FB297008D7C41 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */; };
 		E82940FB1D1FB298008D7C41 /* KissKissTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940FA1D1FB298008D7C41 /* KissKissTests.swift */; };
 		E82941061D1FB298008D7C41 /* KissKissUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82941051D1FB298008D7C41 /* KissKissUITests.swift */; };
+		E82941141D1FB585008D7C41 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E82941131D1FB585008D7C41 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
+		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.debug.xcconfig"; sourceTree = "<group>"; };
 		E82940E21D1FB297008D7C41 /* KissKiss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KissKiss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82940E51D1FB297008D7C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E82940E71D1FB297008D7C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		E82941011D1FB298008D7C41 /* KissKissUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KissKissUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82941051D1FB298008D7C41 /* KissKissUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KissKissUITests.swift; sourceTree = "<group>"; };
 		E82941071D1FB298008D7C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E82941131D1FB585008D7C41 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2015683007FE7288D39F5A6 /* Pods_KissKiss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +81,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9FF3727B776E9F8755C927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87357CA398DF6BD65267A7F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */,
+				418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E82940D91D1FB297008D7C41 = {
 			isa = PBXGroup;
 			children = (
+				E82941131D1FB585008D7C41 /* Podfile */,
 				E82940E41D1FB297008D7C41 /* KissKiss */,
 				E82940F91D1FB298008D7C41 /* KissKissTests */,
 				E82941041D1FB298008D7C41 /* KissKissUITests */,
 				E82940E31D1FB297008D7C41 /* Products */,
+				87357CA398DF6BD65267A7F6 /* Pods */,
+				3F9FF3727B776E9F8755C927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E829410A1D1FB298008D7C41 /* Build configuration list for PBXNativeTarget "KissKiss" */;
 			buildPhases = (
+				BE29E91AE924AC230B3FD513 /* 📦 Check Pods Manifest.lock */,
 				E82940DE1D1FB297008D7C41 /* Sources */,
 				E82940DF1D1FB297008D7C41 /* Frameworks */,
 				E82940E01D1FB297008D7C41 /* Resources */,
+				999C20ACF496D61CE920990C /* 📦 Embed Pods Frameworks */,
+				11ACB5FDF4DAF2829A8AC214 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +261,7 @@
 			files = (
 				E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */,
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
+				E82941141D1FB585008D7C41 /* Podfile in Resources */,
 				E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11ACB5FDF4DAF2829A8AC214 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		999C20ACF496D61CE920990C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE29E91AE924AC230B3FD513 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E82940DE1D1FB297008D7C41 /* Sources */ = {
@@ -397,6 +476,7 @@
 		};
 		E829410B1D1FB298008D7C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KissKiss/Info.plist;
@@ -408,6 +488,7 @@
 		};
 		E829410C1D1FB298008D7C41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KissKiss/Info.plist;
@@ -482,6 +563,7 @@
 				E829410C1D1FB298008D7C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E829410D1D1FB298008D7C41 /* Build configuration list for PBXNativeTarget "KissKissTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +572,7 @@
 				E829410F1D1FB298008D7C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E82941101D1FB298008D7C41 /* Build configuration list for PBXNativeTarget "KissKissUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +581,7 @@
 				E82941121D1FB298008D7C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
