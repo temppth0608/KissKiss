@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C2015683007FE7288D39F5A6 /* Pods_KissKiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */; };
 		E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E51D1FB297008D7C41 /* AppDelegate.swift */; };
-		E82940E81D1FB297008D7C41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E71D1FB297008D7C41 /* ViewController.swift */; };
 		E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940E91D1FB297008D7C41 /* Main.storyboard */; };
 		E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82940EC1D1FB298008D7C41 /* Assets.xcassets */; };
 		E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.debug.xcconfig"; sourceTree = "<group>"; };
 		E82940E21D1FB297008D7C41 /* KissKiss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KissKiss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82940E51D1FB297008D7C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E82940E71D1FB297008D7C41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E82940EA1D1FB297008D7C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E82940EC1D1FB298008D7C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82940EF1D1FB298008D7C41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +96,112 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E81B42BA1D32B6B0005F0DCC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		E81B42BB1D32B6BD005F0DCC /* res */ = {
+			isa = PBXGroup;
+			children = (
+				E81B42BF1D32B6EC005F0DCC /* SuppotingFiles */,
+				E81B42BD1D32B6D0005F0DCC /* assets */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
+		E81B42BC1D32B6C4005F0DCC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E81B42BE1D32B6D8005F0DCC /* 인터페이스 */,
+				E81B42C21D32B7A9005F0DCC /* 그래프 */,
+				E81B42C31D32B7B3005F0DCC /* 다이어리 */,
+				E81B42C41D32B7D0005F0DCC /* 설정 */,
+				E81B42C11D32B72A005F0DCC /* AppDelegate */,
+				E81B42C61D32B7F4005F0DCC /* 데이터제공자 */,
+				E81B42C51D32B7EC005F0DCC /* 모델 */,
+				E81B42C01D32B71A005F0DCC /* Utils */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		E81B42BD1D32B6D0005F0DCC /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E82940EC1D1FB298008D7C41 /* Assets.xcassets */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		E81B42BE1D32B6D8005F0DCC /* 인터페이스 */ = {
+			isa = PBXGroup;
+			children = (
+				E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */,
+				E82940E91D1FB297008D7C41 /* Main.storyboard */,
+			);
+			name = "인터페이스";
+			sourceTree = "<group>";
+		};
+		E81B42BF1D32B6EC005F0DCC /* SuppotingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E82940F11D1FB298008D7C41 /* Info.plist */,
+			);
+			name = SuppotingFiles;
+			sourceTree = "<group>";
+		};
+		E81B42C01D32B71A005F0DCC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E81B42C11D32B72A005F0DCC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E82940E51D1FB297008D7C41 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E81B42C21D32B7A9005F0DCC /* 그래프 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "그래프";
+			sourceTree = "<group>";
+		};
+		E81B42C31D32B7B3005F0DCC /* 다이어리 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "다이어리";
+			sourceTree = "<group>";
+		};
+		E81B42C41D32B7D0005F0DCC /* 설정 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "설정";
+			sourceTree = "<group>";
+		};
+		E81B42C51D32B7EC005F0DCC /* 모델 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "모델";
+			sourceTree = "<group>";
+		};
+		E81B42C61D32B7F4005F0DCC /* 데이터제공자 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "데이터제공자";
+			sourceTree = "<group>";
+		};
 		E82940D91D1FB297008D7C41 = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +228,9 @@
 		E82940E41D1FB297008D7C41 /* KissKiss */ = {
 			isa = PBXGroup;
 			children = (
-				E82940E51D1FB297008D7C41 /* AppDelegate.swift */,
-				E82940E71D1FB297008D7C41 /* ViewController.swift */,
-				E82940E91D1FB297008D7C41 /* Main.storyboard */,
-				E82940EC1D1FB298008D7C41 /* Assets.xcassets */,
-				E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */,
-				E82940F11D1FB298008D7C41 /* Info.plist */,
+				E81B42BC1D32B6C4005F0DCC /* src */,
+				E81B42BB1D32B6BD005F0DCC /* res */,
+				E81B42BA1D32B6B0005F0DCC /* Libs */,
 			);
 			path = KissKiss;
 			sourceTree = "<group>";
@@ -335,7 +436,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82940E81D1FB297008D7C41 /* ViewController.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
