@@ -11,19 +11,8 @@ import RealmSwift
 
 class User: Object {
     
-    static var instance: User!
-    dynamic var uuid: Int64 = 0
     dynamic var gender: String = ""
     dynamic var age : Int = 0
     dynamic var height: Int = 0
-    
-    class func sharedInstance() -> User {
-        self.instance = (self.instance ?? User())
-        return self.instance
-    }
-    
-    override static func primaryKey()-> String? {
-        return "uuid"
-    }
 
 }
