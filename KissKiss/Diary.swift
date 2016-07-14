@@ -11,7 +11,7 @@ import RealmSwift
 
 class Diary: Object {
     
-    dynamic var uuid: Int64 = 0
+    dynamic var uuid: Int = 0
     dynamic var date: NSDate = NSDate(timeIntervalSince1970: 1)
     dynamic var photoURL: String = ""
     dynamic var contents: String = ""
