@@ -6,5 +6,6 @@ use_frameworks!
 target 'KissKiss' do
 pod 'AsyncSwift'
 pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.0.0'
-pod "SwiftDate"
+pod 'SwiftDate'
+pod 'RealmSwift'
 end
