@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
+		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
+		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
 		C2015683007FE7288D39F5A6 /* Pods_KissKiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */; };
 		E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E51D1FB297008D7C41 /* AppDelegate.swift */; };
 		E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940E91D1FB297008D7C41 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
+		B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewController.swift; sourceTree = "<group>"; };
+		B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+colorFromHex.swift"; sourceTree = "<group>"; };
 		BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.debug.xcconfig"; sourceTree = "<group>"; };
 		E82940E21D1FB297008D7C41 /* KissKiss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KissKiss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82940E51D1FB297008D7C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +176,9 @@
 		E81B42C21D32B7A9005F0DCC /* 그래프 */ = {
 			isa = PBXGroup;
 			children = (
+				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
+				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
+				B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";
@@ -436,6 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */,
+				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
+				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
