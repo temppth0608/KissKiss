@@ -16,6 +16,11 @@
                     <view key="view" contentMode="scaleToFill" id="U4N-Lg-QTS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-mu-hiI" customClass="ScrollableGraphView" customModule="KissKiss" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="265" width="429" height="335"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>

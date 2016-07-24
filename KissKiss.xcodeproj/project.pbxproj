@@ -10,6 +10,7 @@
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
 		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
+		B081E07E1D414B0F00B8B965 /* Graph.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B081E07D1D414B0F00B8B965 /* Graph.storyboard */; };
 		C2015683007FE7288D39F5A6 /* Pods_KissKiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */; };
 		E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82940E51D1FB297008D7C41 /* AppDelegate.swift */; };
 		E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82940E91D1FB297008D7C41 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+colorFromHex.swift"; sourceTree = "<group>"; };
+		B081E07D1D414B0F00B8B965 /* Graph.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Graph.storyboard; sourceTree = "<group>"; };
 		BA19881341C8B8EB10B5615C /* Pods-KissKiss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.debug.xcconfig"; sourceTree = "<group>"; };
 		E82940E21D1FB297008D7C41 /* KissKiss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KissKiss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82940E51D1FB297008D7C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B05649CA1D44CC3B00FFB559 /* UIColorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */,
+			);
+			name = UIColorExtension;
+			sourceTree = "<group>";
+		};
 		E81B42BA1D32B6B0005F0DCC /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 			children = (
 				E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */,
 				E82940E91D1FB297008D7C41 /* Main.storyboard */,
+				B081E07D1D414B0F00B8B965 /* Graph.storyboard */,
 			);
 			name = "인터페이스";
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 		E81B42C01D32B71A005F0DCC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B05649CA1D44CC3B00FFB559 /* UIColorExtension */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -178,7 +190,6 @@
 			children = (
 				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
 				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
-				B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";
@@ -371,6 +382,7 @@
 			files = (
 				E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */,
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
+				B081E07E1D414B0F00B8B965 /* Graph.storyboard in Resources */,
 				E82941141D1FB585008D7C41 /* Podfile in Resources */,
 				E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */,
 			);
