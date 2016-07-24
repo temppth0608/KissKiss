@@ -163,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zip-rB-w8e">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <connections>
                                     <segue destination="10G-5q-tgV" kind="embed" id="tNW-kW-goL"/>
                                 </connections>
@@ -174,7 +174,7 @@
                             <constraint firstAttribute="bottom" secondItem="zip-rB-w8e" secondAttribute="bottom" constant="49" id="LRF-kl-o7J"/>
                             <constraint firstAttribute="trailing" secondItem="zip-rB-w8e" secondAttribute="trailing" id="TVL-Tb-szA"/>
                             <constraint firstItem="zip-rB-w8e" firstAttribute="leading" secondItem="CY5-om-3c6" secondAttribute="leading" id="cT4-F3-Xan"/>
-                            <constraint firstItem="zip-rB-w8e" firstAttribute="top" secondItem="CY5-om-3c6" secondAttribute="top" constant="64" id="ljU-7n-UiN"/>
+                            <constraint firstItem="zip-rB-w8e" firstAttribute="top" secondItem="CY5-om-3c6" secondAttribute="top" id="ljU-7n-UiN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="세팅" id="b1D-yp-xh4"/>
