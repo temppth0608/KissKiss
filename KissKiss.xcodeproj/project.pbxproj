@@ -11,6 +11,7 @@
 		4ABA17C41D44D08000C509BC /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C11D44D08000C509BC /* Diary.swift */; };
 		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
 		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
+		B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D67A71D4514B10013D45B /* MainGraphViewController.swift */; };
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
 		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
@@ -49,6 +50,7 @@
 		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B00D67A71D4514B10013D45B /* MainGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+colorFromHex.swift"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
 				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
+				B00D67A71D4514B10013D45B /* MainGraphViewController.swift */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
+				B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */,
 				4ABA17C61D44D08000C509BC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
