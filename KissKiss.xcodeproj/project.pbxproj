@@ -12,6 +12,10 @@
 		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
 		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
 		B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D67A71D4514B10013D45B /* MainGraphViewController.swift */; };
+		4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17C91D44DAF300C509BC /* Setting.storyboard */; };
+		650BA23C1D44E62100980699 /* DiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */; };
+		650BA23E1D44E69300980699 /* DiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */; };
+		650BA2411D44EFF800980699 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA2401D44EFF800980699 /* String+.swift */; };
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
 		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
@@ -49,6 +53,10 @@
 		4ABA17C11D44D08000C509BC /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4ABA17C91D44DAF300C509BC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewController.swift; sourceTree = "<group>"; };
+		650BA2401D44EFF800980699 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00D67A71D4514B10013D45B /* MainGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
@@ -103,6 +111,14 @@
 				9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650BA23F1D44EFDF00980699 /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				650BA2401D44EFF800980699 /* String+.swift */,
+			);
+			name = StringExtension;
 			sourceTree = "<group>";
 		};
 		87357CA398DF6BD65267A7F6 /* Pods */ = {
@@ -168,6 +184,7 @@
 				E82940E91D1FB297008D7C41 /* Main.storyboard */,
 				B081E07D1D414B0F00B8B965 /* Graph.storyboard */,
 				4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */,
+				4ABA17C91D44DAF300C509BC /* Setting.storyboard */,
 			);
 			name = "인터페이스";
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 		E81B42C01D32B71A005F0DCC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				650BA23F1D44EFDF00980699 /* StringExtension */,
 				B05649CA1D44CC3B00FFB559 /* UIColorExtension */,
 			);
 			name = Utils;
@@ -209,6 +227,8 @@
 		E81B42C31D32B7B3005F0DCC /* 다이어리 */ = {
 			isa = PBXGroup;
 			children = (
+				650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */,
+				650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */,
 			);
 			name = "다이어리";
 			sourceTree = "<group>";
@@ -397,6 +417,7 @@
 			files = (
 				E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */,
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
+				4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */,
 				4ABA17C01D44CF2B00C509BC /* Diary.storyboard in Resources */,
 				B081E07E1D414B0F00B8B965 /* Graph.storyboard in Resources */,
 				E82941141D1FB585008D7C41 /* Podfile in Resources */,
@@ -473,8 +494,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650BA23C1D44E62100980699 /* DiaryCollectionViewCell.swift in Sources */,
 				B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */,
+				650BA2411D44EFF800980699 /* String+.swift in Sources */,
 				4ABA17C41D44D08000C509BC /* Diary.swift in Sources */,
+				650BA23E1D44E69300980699 /* DiaryCollectionViewController.swift in Sources */,
 				4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */,
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
