@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4ABA17C01D44CF2B00C509BC /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */; };
+		4ABA17C41D44D08000C509BC /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C11D44D08000C509BC /* Diary.swift */; };
+		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
+		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
 		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
 		4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		4ABA17C11D44D08000C509BC /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
+		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +220,9 @@
 		E81B42C51D32B7EC005F0DCC /* 모델 */ = {
 			isa = PBXGroup;
 			children = (
+				4ABA17C11D44D08000C509BC /* Diary.swift */,
+				4ABA17C21D44D08000C509BC /* Dimension.swift */,
+				4ABA17C31D44D08000C509BC /* User.swift */,
 			);
 			name = "모델";
 			sourceTree = "<group>";
@@ -462,9 +471,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */,
+				4ABA17C41D44D08000C509BC /* Diary.swift in Sources */,
+				4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */,
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
+				4ABA17C61D44D08000C509BC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
