@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4ABA17C01D44CF2B00C509BC /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */; };
 		4ABA17C41D44D08000C509BC /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C11D44D08000C509BC /* Diary.swift */; };
 		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
 		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
-		B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D67A71D4514B10013D45B /* MainGraphViewController.swift */; };
 		4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17C91D44DAF300C509BC /* Setting.storyboard */; };
 		650BA23C1D44E62100980699 /* DiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */; };
 		650BA23E1D44E69300980699 /* DiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */; };
 		650BA2411D44EFF800980699 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA2401D44EFF800980699 /* String+.swift */; };
+		654095981D47AA370034971D /* TLDiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */; };
+		6540959A1D47AB390034971D /* TLDiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */; };
+		6540959C1D47AE120034971D /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6540959B1D47AE120034971D /* Diary.storyboard */; };
+		B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D67A71D4514B10013D45B /* MainGraphViewController.swift */; };
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
 		B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0751D413F3300B8B965 /* UIColor+colorFromHex.swift */; };
@@ -49,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
-		4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		4ABA17C11D44D08000C509BC /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -57,6 +58,9 @@
 		650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewController.swift; sourceTree = "<group>"; };
 		650BA2401D44EFF800980699 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewController.swift; sourceTree = "<group>"; };
+		6540959B1D47AE120034971D /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00D67A71D4514B10013D45B /* MainGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
@@ -182,8 +186,8 @@
 			children = (
 				E82940EE1D1FB298008D7C41 /* LaunchScreen.storyboard */,
 				E82940E91D1FB297008D7C41 /* Main.storyboard */,
+				6540959B1D47AE120034971D /* Diary.storyboard */,
 				B081E07D1D414B0F00B8B965 /* Graph.storyboard */,
-				4ABA17BF1D44CF2B00C509BC /* Diary.storyboard */,
 				4ABA17C91D44DAF300C509BC /* Setting.storyboard */,
 			);
 			name = "인터페이스";
@@ -229,6 +233,8 @@
 			children = (
 				650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */,
 				650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */,
+				654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */,
+				654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */,
 			);
 			name = "다이어리";
 			sourceTree = "<group>";
@@ -415,10 +421,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6540959C1D47AE120034971D /* Diary.storyboard in Resources */,
 				E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */,
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
 				4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */,
-				4ABA17C01D44CF2B00C509BC /* Diary.storyboard in Resources */,
 				B081E07E1D414B0F00B8B965 /* Graph.storyboard in Resources */,
 				E82941141D1FB585008D7C41 /* Podfile in Resources */,
 				E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */,
@@ -504,6 +510,8 @@
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
 				B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */,
+				6540959A1D47AB390034971D /* TLDiaryCollectionViewController.swift in Sources */,
+				654095981D47AA370034971D /* TLDiaryCollectionViewCell.swift in Sources */,
 				4ABA17C61D44D08000C509BC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
