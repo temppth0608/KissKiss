@@ -14,10 +14,12 @@ class ScrollableGraphViewController: UIViewController {
     var graphConstraints = [NSLayoutConstraint]()
     
     // Data
-    let numberOfDataItems = 29
+    let numberOfDataItems = 31
     
     lazy var data: [Double] = self.generateRandomData(self.numberOfDataItems, max: 50)
-    lazy var labels: [String] = self.generateSequentialLabels(self.numberOfDataItems, text: "FEB")
+    
+    //lazy var data: [Double] = [48,48,49,49, 50, 49, 48, 48, 48, 47, 47, 47, 47, 46, 48,48,49,49, 50, 49, 48, 48, 48, 47, 47, 47, 47, 46, 45, 45, 45]
+    lazy var labels: [String] = self.generateSequentialLabels(self.numberOfDataItems, text: "7/")
     
     
     override func viewDidLoad() {
