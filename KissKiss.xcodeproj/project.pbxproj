@@ -17,6 +17,7 @@
 		654095981D47AA370034971D /* TLDiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */; };
 		6540959A1D47AB390034971D /* TLDiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */; };
 		6540959C1D47AE120034971D /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6540959B1D47AE120034971D /* Diary.storyboard */; };
+		65ED16411D4DC7E30068D411 /* WriteDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65ED16401D4DC7E30068D411 /* WriteDiary.storyboard */; };
 		B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D67A71D4514B10013D45B /* MainGraphViewController.swift */; };
 		B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */; };
 		B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */; };
@@ -61,6 +62,7 @@
 		654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewController.swift; sourceTree = "<group>"; };
 		6540959B1D47AE120034971D /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		65ED16401D4DC7E30068D411 /* WriteDiary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WriteDiary.storyboard; sourceTree = "<group>"; };
 		9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KissKiss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00D67A71D4514B10013D45B /* MainGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainGraphViewController.swift; sourceTree = "<group>"; };
 		B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				6540959B1D47AE120034971D /* Diary.storyboard */,
 				B081E07D1D414B0F00B8B965 /* Graph.storyboard */,
 				4ABA17C91D44DAF300C509BC /* Setting.storyboard */,
+				65ED16401D4DC7E30068D411 /* WriteDiary.storyboard */,
 			);
 			name = "인터페이스";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ED16411D4DC7E30068D411 /* WriteDiary.storyboard in Resources */,
 				6540959C1D47AE120034971D /* Diary.storyboard in Resources */,
 				E82940F01D1FB298008D7C41 /* LaunchScreen.storyboard in Resources */,
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
