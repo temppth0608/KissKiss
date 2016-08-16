@@ -11,6 +11,21 @@ import RealmSwift
 
 class Dimension: Object {
     
+    // MARK: - Table / Property Names
+    
+    static let tableName = "Dimension"
+    
+    static let uuid = "uuid"
+    static let date = "date"
+    static let weight = "weight"
+    static let waist = "waist"
+    static let arm = "arm"
+    static let leg = "leg"
+    static let bmi = "bmi"
+    
+    // MARK: - Common Properties
+    
+    dynamic var uuid: Int = 0
     dynamic var date :NSDate = NSDate(timeIntervalSince1970: 1)
     dynamic var weight: Double = 0
     dynamic var waist: Double = 0
@@ -18,8 +33,10 @@ class Dimension: Object {
     dynamic var leg: Double = 0
     dynamic var bmi: Double = 0
     
+    // MARK: - Primary Key
+    
     override static func primaryKey()-> String? {
-        return "date"
+        return "uuid"
     }
 
 }

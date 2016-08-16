@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sa3-8B-P9x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sa3-8B-P9x">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--그래프-->
+        <!--View Controller-->
         <scene sceneID="OD6-aI-YNv">
             <objects>
                 <viewController id="ifL-Pz-QwT" sceneMemberID="viewController">
@@ -32,12 +32,26 @@
                             <constraint firstAttribute="bottom" secondItem="zBj-ZK-mFd" secondAttribute="bottom" constant="49" id="inn-9G-FR0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="그래프" id="W7L-rH-arF"/>
+                    <navigationItem key="navigationItem" id="W7L-rH-arF">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="k60-aV-GpA">
+                            <connections>
+                                <segue destination="hOv-s8-j1Y" kind="presentation" id="NHl-Xo-nRG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiZ-pI-YVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1988.5" y="-462.5"/>
+        </scene>
+        <!--DimensionCreate-->
+        <scene sceneID="a9f-as-sxS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DimensionCreate" id="hOv-s8-j1Y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1cf-m0-dny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2384.5" y="-753"/>
         </scene>
         <!--Graph-->
         <scene sceneID="1K1-6i-RlL">

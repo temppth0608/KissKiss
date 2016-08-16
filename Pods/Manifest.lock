@@ -1,15 +1,17 @@
 PODS:
-  - AsyncSwift (1.7.2)
-  - Realm (1.0.1):
-    - Realm/Headers (= 1.0.1)
-  - Realm/Headers (1.0.1)
-  - RealmSwift (1.0.1):
-    - Realm (= 1.0.1)
+  - AsyncSwift (1.7.3)
+  - LGAlertView (2.0.13)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - RealmSwift (1.0.2):
+    - Realm (= 1.0.2)
   - SwiftDate (3.0.8)
   - SwiftValidator (3.0.1)
 
 DEPENDENCIES:
   - AsyncSwift
+  - LGAlertView
   - RealmSwift
   - SwiftDate
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, tag `4.0.0`)
@@ -25,12 +27,13 @@ CHECKOUT OPTIONS:
     :tag: 4.0.0
 
 SPEC CHECKSUMS:
-  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
-  Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
-  RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
+  AsyncSwift: f3ad5dd077bbd1477e7573e87071a532fedaca1a
+  LGAlertView: 9a5dcbf4f81b02b718083539d7f222280adc9547
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
   SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
   SwiftValidator: 461a2c00173f001287a8fa1f12704b87ec8a6bc4
 
-PODFILE CHECKSUM: b963495d777a66ff0892e9752f64fa204b9d60fb
+PODFILE CHECKSUM: 7c1963429afec859fe15b9e96dd133cf81920ddc
 
 COCOAPODS: 1.0.1

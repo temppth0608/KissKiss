@@ -8,4 +8,5 @@ pod 'AsyncSwift'
 pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.0.0'
 pod 'SwiftDate'
 pod 'RealmSwift'
+pod 'LGAlertView'
 end
