@@ -256,6 +256,7 @@
 		E81B42C01D32B71A005F0DCC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				80563DE71D62241500A6E359 /* Custom */,
 				650BA23F1D44EFDF00980699 /* StringExtension */,
 				B05649CA1D44CC3B00FFB559 /* UIColorExtension */,
 			);
@@ -273,7 +274,6 @@
 		E81B42C21D32B7A9005F0DCC /* 그래프 */ = {
 			isa = PBXGroup;
 			children = (
-				80563DE71D62241500A6E359 /* Custom */,
 				80563DE21D6204E100A6E359 /* DimensionCreate */,
 				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
 				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
