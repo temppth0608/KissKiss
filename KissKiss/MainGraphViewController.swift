@@ -10,13 +10,15 @@ import UIKit
 
 // MARK: - Property
 
-class MainGraphViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class MainGraphViewController: UIViewController{
     
 
     @IBOutlet weak var TwoViewContainer: UIView!
     @IBOutlet weak var ThreeViewContainer: UIView!
     
-    private let sectionList = ["몸무게","허리","다리", "팔"]
+    @IBOutlet weak var SectionButton: UIButton!
+    
+    private let sectionPickerList = ["몸무게 그래프","허리 그래프","다리 그래프", "팔 그래프"]
     
     
 }
@@ -47,11 +49,13 @@ extension MainGraphViewController {
 }
 
 
-extension MainGraphViewController {
+extension MainGraphViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     private func showSectionPicker() {
         Picker.List.show(view, dataSource: self, delegate: self) { selectedIndex in
-            
+            if let selectedIndex = selectedIndex {
+                self.SectionButton.setTitle(self.sectionPickerList[selectedIndex], forState: .Normal)
+            }
         }
     }
     
@@ -60,10 +64,10 @@ extension MainGraphViewController {
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return sectionList.count
+        return sectionPickerList.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return sectionList[row]
+        return sectionPickerList[row]
     }
 }

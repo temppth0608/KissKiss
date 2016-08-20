@@ -147,6 +147,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="SectionButton" destination="beg-x1-4QK" id="K04-zU-OQ0"/>
                         <outlet property="ThreeViewContainer" destination="tPy-Og-PoJ" id="Io2-ms-YZq"/>
                         <outlet property="TwoViewContainer" destination="G5j-ot-d7z" id="TM6-Cz-HAY"/>
                     </connections>
