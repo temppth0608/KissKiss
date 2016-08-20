@@ -133,12 +133,12 @@
 			name = StringExtension;
 			sourceTree = "<group>";
 		};
-		80563DE21D6204E100A6E359 /* DimensionCreate */ = {
+		80563DE21D6204E100A6E359 /* 생성 */ = {
 			isa = PBXGroup;
 			children = (
 				80563DE01D62036900A6E359 /* DimensionCreateViewController.swift */,
 			);
-			name = DimensionCreate;
+			name = "생성";
 			sourceTree = "<group>";
 		};
 		80563DE71D62241500A6E359 /* Custom */ = {
@@ -148,6 +148,31 @@
 				80563DEC1D623E8C00A6E359 /* DateFormat.swift */,
 			);
 			name = Custom;
+			sourceTree = "<group>";
+		};
+		80759A941D685C6600EDAC74 /* 라이브러리 */ = {
+			isa = PBXGroup;
+			children = (
+				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
+			);
+			name = "라이브러리";
+			sourceTree = "<group>";
+		};
+		80759A961D685CD400EDAC74 /* 메인 */ = {
+			isa = PBXGroup;
+			children = (
+				80759A971D685D3900EDAC74 /* Container */,
+				B00D67A71D4514B10013D45B /* MainGraphViewController.swift */,
+			);
+			name = "메인";
+			sourceTree = "<group>";
+		};
+		80759A971D685D3900EDAC74 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
+			);
+			name = Container;
 			sourceTree = "<group>";
 		};
 		87357CA398DF6BD65267A7F6 /* Pods */ = {
@@ -247,11 +272,10 @@
 		E81B42C21D32B7A9005F0DCC /* 그래프 */ = {
 			isa = PBXGroup;
 			children = (
+				80759A961D685CD400EDAC74 /* 메인 */,
+				80759A941D685C6600EDAC74 /* 라이브러리 */,
 				80563DE71D62241500A6E359 /* Custom */,
-				80563DE21D6204E100A6E359 /* DimensionCreate */,
-				B081E0731D413F3300B8B965 /* ScrollableGraphView.swift */,
-				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
-				B00D67A71D4514B10013D45B /* MainGraphViewController.swift */,
+				80563DE21D6204E100A6E359 /* 생성 */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";
