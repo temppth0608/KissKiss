@@ -33,7 +33,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W7L-rH-arF">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="k60-aV-GpA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="k60-aV-GpA">
                             <connections>
                                 <segue destination="hOv-s8-j1Y" kind="presentation" id="NHl-Xo-nRG"/>
                             </connections>
