@@ -69,7 +69,7 @@ extension DimensionCreateViewController {
     
     private func showDatePicker() {
         DatePicker.show(self.view) { selecedDate in
-            self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate), forState: .Normal)
+            self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate, 포멧: .피커포멧), forState: .Normal)
         }
     }
     

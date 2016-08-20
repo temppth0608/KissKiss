@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A60D94B1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */; };
+		4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */; };
+		4A8AE4A31D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */; };
+		4A8AE4A51D6828E800ACAE9F /* 다이어리_데이터_제공자.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A41D6828E800ACAE9F /* 다이어리_데이터_제공자.swift */; };
+		4A8AE4A71D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A61D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift */; };
 		4ABA17C41D44D08000C509BC /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C11D44D08000C509BC /* Diary.swift */; };
 		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
 		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
 		4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17C91D44DAF300C509BC /* Setting.storyboard */; };
-		650BA23C1D44E62100980699 /* DiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */; };
-		650BA23E1D44E69300980699 /* DiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */; };
 		650BA2411D44EFF800980699 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA2401D44EFF800980699 /* String+.swift */; };
-		654095981D47AA370034971D /* TLDiaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */; };
-		6540959A1D47AB390034971D /* TLDiaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */; };
 		6540959C1D47AE120034971D /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6540959B1D47AE120034971D /* Diary.storyboard */; };
 		80563DDF1D61E55800A6E359 /* DimensionCreate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80563DDE1D61E55800A6E359 /* DimensionCreate.storyboard */; };
 		80563DE11D62036900A6E359 /* DimensionCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80563DE01D62036900A6E359 /* DimensionCreateViewController.swift */; };
@@ -55,15 +56,16 @@
 
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
+		4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_메인_뷰컨트롤러.swift"; sourceTree = "<group>"; };
+		4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_컬렉션_뷰컨트롤러.swift"; sourceTree = "<group>"; };
+		4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_테이블_뷰컨트롤러.swift"; sourceTree = "<group>"; };
+		4A8AE4A41D6828E800ACAE9F /* 다이어리_데이터_제공자.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_데이터_제공자.swift"; sourceTree = "<group>"; };
+		4A8AE4A61D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_디테일_뷰컨트롤러.swift"; sourceTree = "<group>"; };
 		4ABA17C11D44D08000C509BC /* Diary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4ABA17C91D44DAF300C509BC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
-		650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewCell.swift; sourceTree = "<group>"; };
-		650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryCollectionViewController.swift; sourceTree = "<group>"; };
 		650BA2401D44EFF800980699 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewCell.swift; sourceTree = "<group>"; };
-		654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLDiaryCollectionViewController.swift; sourceTree = "<group>"; };
 		6540959B1D47AE120034971D /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		80563DDE1D61E55800A6E359 /* DimensionCreate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DimensionCreate.storyboard; sourceTree = "<group>"; };
 		80563DE01D62036900A6E359 /* DimensionCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimensionCreateViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,31 @@
 				9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A60D9471D68212100317D1E /* 메인 */ = {
+			isa = PBXGroup;
+			children = (
+				4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */,
+				4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */,
+				4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */,
+			);
+			name = "메인";
+			sourceTree = "<group>";
+		};
+		4A60D9481D68212900317D1E /* 디테일 */ = {
+			isa = PBXGroup;
+			children = (
+				4A8AE4A61D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift */,
+			);
+			name = "디테일";
+			sourceTree = "<group>";
+		};
+		4A60D9491D68213D00317D1E /* 쓰기 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "쓰기";
 			sourceTree = "<group>";
 		};
 		650BA23F1D44EFDF00980699 /* StringExtension */ = {
@@ -191,7 +218,6 @@
 				E81B42C31D32B7B3005F0DCC /* 다이어리 */,
 				E81B42C41D32B7D0005F0DCC /* 설정 */,
 				E81B42C11D32B72A005F0DCC /* AppDelegate */,
-				E81B42C61D32B7F4005F0DCC /* 데이터제공자 */,
 				E81B42C51D32B7EC005F0DCC /* 모델 */,
 				E81B42C01D32B71A005F0DCC /* Utils */,
 			);
@@ -259,10 +285,10 @@
 		E81B42C31D32B7B3005F0DCC /* 다이어리 */ = {
 			isa = PBXGroup;
 			children = (
-				650BA23B1D44E62100980699 /* DiaryCollectionViewCell.swift */,
-				650BA23D1D44E69300980699 /* DiaryCollectionViewController.swift */,
-				654095971D47AA370034971D /* TLDiaryCollectionViewCell.swift */,
-				654095991D47AB390034971D /* TLDiaryCollectionViewController.swift */,
+				4A8AE4A41D6828E800ACAE9F /* 다이어리_데이터_제공자.swift */,
+				4A60D9471D68212100317D1E /* 메인 */,
+				4A60D9481D68212900317D1E /* 디테일 */,
+				4A60D9491D68213D00317D1E /* 쓰기 */,
 			);
 			name = "다이어리";
 			sourceTree = "<group>";
@@ -282,13 +308,6 @@
 				4ABA17C31D44D08000C509BC /* User.swift */,
 			);
 			name = "모델";
-			sourceTree = "<group>";
-		};
-		E81B42C61D32B7F4005F0DCC /* 데이터제공자 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "데이터제공자";
 			sourceTree = "<group>";
 		};
 		E82940D91D1FB297008D7C41 = {
@@ -529,20 +548,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650BA23C1D44E62100980699 /* DiaryCollectionViewCell.swift in Sources */,
 				B081E0771D413F3300B8B965 /* ScrollableGraphViewController.swift in Sources */,
 				80563DED1D623E8C00A6E359 /* DateFormat.swift in Sources */,
+				4A60D94B1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift in Sources */,
 				650BA2411D44EFF800980699 /* String+.swift in Sources */,
 				4ABA17C41D44D08000C509BC /* Diary.swift in Sources */,
-				650BA23E1D44E69300980699 /* DiaryCollectionViewController.swift in Sources */,
+				4A8AE4A71D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift in Sources */,
 				4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */,
+				4A8AE4A51D6828E800ACAE9F /* 다이어리_데이터_제공자.swift in Sources */,
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
+				4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
+				4A8AE4A31D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift in Sources */,
 				80563DE11D62036900A6E359 /* DimensionCreateViewController.swift in Sources */,
 				B00D67A81D4514B10013D45B /* MainGraphViewController.swift in Sources */,
-				6540959A1D47AB390034971D /* TLDiaryCollectionViewController.swift in Sources */,
-				654095981D47AA370034971D /* TLDiaryCollectionViewCell.swift in Sources */,
 				80563DE91D62257800A6E359 /* Picker.swift in Sources */,
 				4ABA17C61D44D08000C509BC /* User.swift in Sources */,
 			);
