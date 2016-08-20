@@ -10,27 +10,64 @@ import UIKit
 
 // MARK: - Property
 
-class MainGraphViewController: UIViewController {
+class MainGraphViewController: UIViewController{
     
-    @IBOutlet weak var dayContainerView: UIView!
-    @IBOutlet weak var weekAndMonthContainerView: UIView!
+
+    @IBOutlet weak var TwoViewContainer: UIView!
+    @IBOutlet weak var ThreeViewContainer: UIView!
+    
+    @IBOutlet weak var SectionButton: UIButton!
+    
+    private let sectionPickerList = ["몸무게 그래프","허리 그래프","다리 그래프", "팔 그래프"]
+    
     
 }
 
 // MARK: - IBAction
 
 extension MainGraphViewController {
+    
+    @IBAction func onClickSection(sender: UIButton) {
+        showSectionPicker()
+    }
+
+
+    
     @IBAction func showComponent(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             UIView.animateWithDuration(0, animations: {
-                self.dayContainerView.alpha = 1
-                self.weekAndMonthContainerView.alpha = 0
+                self.TwoViewContainer.alpha = 1
+                self.ThreeViewContainer.alpha = 0
             })
         } else {
             UIView.animateWithDuration(0, animations: {
-                self.dayContainerView.alpha = 0
-                self.weekAndMonthContainerView.alpha = 1
+                self.TwoViewContainer.alpha = 0
+                self.ThreeViewContainer.alpha = 1
             })
         }
+    }
+}
+
+
+extension MainGraphViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    private func showSectionPicker() {
+        Picker.List.show(view, dataSource: self, delegate: self) { selectedIndex in
+            if let selectedIndex = selectedIndex {
+                self.SectionButton.setTitle(self.sectionPickerList[selectedIndex], forState: .Normal)
+            }
+        }
+    }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return sectionPickerList.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return sectionPickerList[row]
     }
 }

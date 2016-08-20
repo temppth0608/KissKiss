@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Property
 
-class DimensionCreateViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class DimensionCreateViewController: UIViewController {
 
     @IBOutlet weak var dateButton: UIButton!
     
@@ -81,18 +81,7 @@ extension DimensionCreateViewController {
 
         
     }
-    
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 0;
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
-        return pickerDataSource[row]
-    }
+
 }
 
 // MARK: - public function
