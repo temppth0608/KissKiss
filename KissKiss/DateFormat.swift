@@ -8,12 +8,20 @@
 
 import Foundation
 
+enum 날짜포멧 {
+    case 피커포멧
+    case 다이어리날짜포멧
+}
+
 class DateFormat {
-    
-    static func strigFromDate(date: NSDate) -> String{
+    static func strigFromDate(date: NSDate, 포멧: 날짜포멧) -> String{
         let dayTimePeriodFormatter = NSDateFormatter()
-        dayTimePeriodFormatter.dateFormat = "yyyy년 MM월 dd일"
+        switch 포멧 {
+        case .피커포멧:
+            dayTimePeriodFormatter.dateFormat = "yyyy년 MM월 dd일"
+        case .다이어리날짜포멧:
+            dayTimePeriodFormatter.dateFormat = "yyyy.MM.dd일"
+        }
         return dayTimePeriodFormatter.stringFromDate(date)
     }
-    
 }

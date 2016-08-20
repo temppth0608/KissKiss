@@ -68,8 +68,8 @@ extension DimensionCreateViewController {
 extension DimensionCreateViewController {
     
     private func showDatePicker() {
-        Picker.Date.show(self.view) { selecedDate in
-            self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate), forState: .Normal)
+        DatePicker.show(self.view) { selecedDate in
+            self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate, 포멧: .피커포멧), forState: .Normal)
         }
     }
     
