@@ -237,7 +237,7 @@
                                 </constraints>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <navigationItem title="다이어리" id="jUI-Vo-Cs6">
+                                    <navigationItem title="다이어리 추가" id="jUI-Vo-Cs6">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="0qh-T4-8UF">
                                             <connections>
                                                 <action selector="취소_버튼_탭:" destination="jpB-Up-pfD" id="nx6-2q-bTZ"/>

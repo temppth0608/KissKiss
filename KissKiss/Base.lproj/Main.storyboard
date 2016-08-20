@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--그래프-->
         <scene sceneID="OD6-aI-YNv">
             <objects>
                 <viewController id="ifL-Pz-QwT" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <constraint firstAttribute="bottom" secondItem="zBj-ZK-mFd" secondAttribute="bottom" constant="49" id="inn-9G-FR0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="W7L-rH-arF">
+                    <navigationItem key="navigationItem" title="그래프" id="W7L-rH-arF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="k60-aV-GpA">
                             <color key="tintColor" red="0.28235294119999998" green="0.31372549020000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -72,6 +72,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nys-in-RBp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -82,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="1480.5" y="-462.5"/>
         </scene>
-        <!--쪽쪽-->
+        <!--다이어리-->
         <scene sceneID="QyR-jg-9nf">
             <objects>
                 <viewController id="e2B-WC-uvI" sceneMemberID="viewController">
@@ -109,7 +110,7 @@
                             <constraint firstAttribute="trailing" secondItem="lVJ-Ot-29E" secondAttribute="trailing" id="D7q-ZY-w1q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="쪽쪽" id="5EO-dJ-FeI">
+                    <navigationItem key="navigationItem" title="다이어리" id="5EO-dJ-FeI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ARo-wx-ira">
                             <color key="tintColor" red="0.28235294117647058" green="0.31372549019607843" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -170,6 +171,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hIp-yg-ofv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -231,6 +233,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgg-1L-baV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
