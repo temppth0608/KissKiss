@@ -34,6 +34,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W7L-rH-arF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="k60-aV-GpA">
+                            <color key="tintColor" red="0.28235294119999998" green="0.31372549020000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="hOv-s8-j1Y" kind="presentation" id="NHl-Xo-nRG"/>
                             </connections>
@@ -108,12 +109,27 @@
                             <constraint firstAttribute="trailing" secondItem="lVJ-Ot-29E" secondAttribute="trailing" id="D7q-ZY-w1q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="쪽쪽" id="5EO-dJ-FeI"/>
+                    <navigationItem key="navigationItem" title="쪽쪽" id="5EO-dJ-FeI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ARo-wx-ira">
+                            <color key="tintColor" red="0.28235294117647058" green="0.31372549019607843" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="UxH-uc-iew" kind="presentation" id="Uu3-sY-1R0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uf4-OZ-6yj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1988.5" y="329.5"/>
+        </scene>
+        <!--다이어리추가-->
+        <scene sceneID="ffT-AU-Mpj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Diary" referencedIdentifier="다이어리추가" id="UxH-uc-iew" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faZ-P2-ifM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350.5" y="84"/>
         </scene>
         <!--Diary-->
         <scene sceneID="AeI-lr-LyX">
