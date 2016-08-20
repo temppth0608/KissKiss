@@ -11,7 +11,6 @@
         <!--Main Graph View Controller-->
         <scene sceneID="4bO-9R-l9k">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iB1-xO-ZfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ATc-Rg-wfw" customClass="MainGraphViewController" customModule="KissKiss" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vsw-OW-PYE"/>
@@ -42,7 +41,7 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beg-x1-4QK">
-                                        <rect key="frame" x="16" y="14" width="111" height="22"/>
+                                        <rect key="frame" x="16" y="14.5" width="111" height="22"/>
                                         <state key="normal" title="몸무게 그래프" image="arrow-symbols-icons">
                                             <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -152,6 +151,7 @@
                         <outlet property="TwoViewContainer" destination="G5j-ot-d7z" id="TM6-Cz-HAY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iB1-xO-ZfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="81.5" y="70.5"/>
         </scene>
@@ -159,6 +159,10 @@
         <scene sceneID="oQr-JT-c1h">
             <objects>
                 <viewController id="sHC-e9-Gqc" customClass="ScrollableGraphViewController" customModule="KissKiss" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xqK-cP-e4q"/>
+                        <viewControllerLayoutGuide type="bottom" id="WMd-Kj-zsi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Nz-dt-mTi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="371"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,12 +177,16 @@
         <scene sceneID="NGG-Ns-7kk">
             <objects>
                 <viewController id="VmW-Uv-vfd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e9C-eu-HLx"/>
+                        <viewControllerLayoutGuide type="bottom" id="e6o-wW-BDw"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MgS-8T-qos">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="212.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dCE-tH-OHI">
-                                <rect key="frame" x="86" y="83" width="204" height="42"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dCE-tH-OHI">
+                                <rect key="frame" x="85" y="86" width="204" height="42"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-G2-ju0">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="42"/>
@@ -245,6 +253,10 @@
         <scene sceneID="jc0-cQ-gqb">
             <objects>
                 <viewController id="sam-Mj-qx4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MfM-jv-yrh"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFG-D4-Tlx"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aed-wD-0M0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="212.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
