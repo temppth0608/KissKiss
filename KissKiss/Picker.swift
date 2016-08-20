@@ -8,7 +8,6 @@
 
 import UIKit
 import LGAlertView
-import ActionSheetPicker_3_0
 
 class DatePicker {
     static func show(view: UIView, onSelected: ((NSDate) -> Void)? = nil) {
