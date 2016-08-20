@@ -60,7 +60,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="957-fB-MU7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6U-14-de1">
@@ -69,7 +69,7 @@
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onClickDateLabel:" destination="51U-Qe-svy" eventType="touchUpInside" id="lYQ-Ud-azj"/>
+                                                    <action selector="onClickDate:" destination="51U-Qe-svy" eventType="touchUpInside" id="r1B-hB-WtP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -84,7 +84,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="ApS-TP-d0L"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLH-ka-Xxv">
@@ -92,6 +92,9 @@
                                                 <state key="normal" title="   몸무게를 입력해주세요">
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickWeight:" destination="51U-Qe-svy" eventType="touchUpInside" id="bJp-wd-cOw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -105,7 +108,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="cbI-6D-Qh9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRt-fL-LaQ">
@@ -126,7 +129,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="IHe-ZG-ZsU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-MK-Eew">
@@ -147,7 +150,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="gr8-LH-Ldx"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fp-Aj-DBp">
@@ -181,6 +184,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dateButton" destination="f6U-14-de1" id="guX-zB-bg1"/>
+                        <outlet property="weightButton" destination="WLH-ka-Xxv" id="UpZ-rS-pEw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyh-9t-pmg" userLabel="First Responder" sceneMemberID="firstResponder"/>

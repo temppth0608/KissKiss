@@ -10,13 +10,15 @@ import UIKit
 
 // MARK: - Property
 
-class DimensionCreateViewController: UIViewController {
-    
-//    @IBOutlet var webView: UIWebView!
-//    var 변수: String
+class DimensionCreateViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var dateButton: UIButton!
     
+    @IBOutlet weak var weightButton: UIButton!
+    
+    var pickerDataSource = ["White", "Red", "Green", "Blue"];
+    
+  
 }
 
 // MARK: - Recycle Function
@@ -46,11 +48,14 @@ extension DimensionCreateViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func onClickDateLabel(sender: AnyObject) {
-        
+    @IBAction func onClickDate(sender: AnyObject) {
         showDatePicker()
-        
     }
+    
+    @IBAction func onClickWeight(sender: AnyObject) {
+        showKgPicker()
+    }
+    
     
     
     
@@ -66,6 +71,27 @@ extension DimensionCreateViewController {
         DatePicker.show(self.view) { selecedDate in
             self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate), forState: .Normal)
         }
+    }
+    
+    private func showKgPicker() {
+//        KgPicker.show(self.view) { currentKg in
+//            self.dateButton.setTitle(currentKg)
+//        }
+        
+
+        
+    }
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 0;
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+        return pickerDataSource[row]
     }
 }
 
