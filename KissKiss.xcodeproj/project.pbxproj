@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A487E911D70A24100CB65A1 /* 비밀번호.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A487E901D70A24100CB65A1 /* 비밀번호.swift */; };
 		4A60D94B1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */; };
 		4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */; };
 		4A8AE4A31D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */; };
@@ -17,6 +18,7 @@
 		4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C21D44D08000C509BC /* Dimension.swift */; };
 		4ABA17C61D44D08000C509BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA17C31D44D08000C509BC /* User.swift */; };
 		4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABA17C91D44DAF300C509BC /* Setting.storyboard */; };
+		4AF2AB2E1D709A6B00197C42 /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF2AB2D1D709A6B00197C42 /* Password.storyboard */; };
 		650BA2411D44EFF800980699 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BA2401D44EFF800980699 /* String+.swift */; };
 		6540959C1D47AE120034971D /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6540959B1D47AE120034971D /* Diary.storyboard */; };
 		80563DDF1D61E55800A6E359 /* DimensionCreate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80563DDE1D61E55800A6E359 /* DimensionCreate.storyboard */; };
@@ -57,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
+		4A487E901D70A24100CB65A1 /* 비밀번호.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "비밀번호.swift"; sourceTree = "<group>"; };
 		4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_메인_뷰컨트롤러.swift"; sourceTree = "<group>"; };
 		4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_컬렉션_뷰컨트롤러.swift"; sourceTree = "<group>"; };
 		4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_테이블_뷰컨트롤러.swift"; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		4ABA17C21D44D08000C509BC /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		4ABA17C31D44D08000C509BC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4ABA17C91D44DAF300C509BC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		4AF2AB2D1D709A6B00197C42 /* Password.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
 		650BA2401D44EFF800980699 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		6540959B1D47AE120034971D /* Diary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
 		80563DDE1D61E55800A6E359 /* DimensionCreate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DimensionCreate.storyboard; sourceTree = "<group>"; };
@@ -127,6 +131,14 @@
 				9019597EF02BCC1B6B3E92F0 /* Pods_KissKiss.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A487E8F1D70A22500CB65A1 /* 패스워드 */ = {
+			isa = PBXGroup;
+			children = (
+				4A487E901D70A24100CB65A1 /* 비밀번호.swift */,
+			);
+			name = "패스워드";
 			sourceTree = "<group>";
 		};
 		4A60D9471D68212100317D1E /* 메인 */ = {
@@ -258,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				E81B42BE1D32B6D8005F0DCC /* 인터페이스 */,
+				4A487E8F1D70A22500CB65A1 /* 패스워드 */,
 				E81B42C21D32B7A9005F0DCC /* 그래프 */,
 				E81B42C31D32B7B3005F0DCC /* 다이어리 */,
 				E81B42C41D32B7D0005F0DCC /* 설정 */,
@@ -285,6 +298,7 @@
 				B081E07D1D414B0F00B8B965 /* Graph.storyboard */,
 				4ABA17C91D44DAF300C509BC /* Setting.storyboard */,
 				80563DDE1D61E55800A6E359 /* DimensionCreate.storyboard */,
+				4AF2AB2D1D709A6B00197C42 /* Password.storyboard */,
 			);
 			name = "인터페이스";
 			sourceTree = "<group>";
@@ -322,7 +336,6 @@
 				80759A961D685CD400EDAC74 /* 메인 */,
 				80759A941D685C6600EDAC74 /* 라이브러리 */,
 				80563DE21D6204E100A6E359 /* 수치입력 */,
-				80563DE21D6204E100A6E359 /* 생성 */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";
@@ -517,6 +530,7 @@
 				E82940ED1D1FB298008D7C41 /* Assets.xcassets in Resources */,
 				80563DDF1D61E55800A6E359 /* DimensionCreate.storyboard in Resources */,
 				4ABA17CA1D44DAF300C509BC /* Setting.storyboard in Resources */,
+				4AF2AB2E1D709A6B00197C42 /* Password.storyboard in Resources */,
 				B081E07E1D414B0F00B8B965 /* Graph.storyboard in Resources */,
 				E82941141D1FB585008D7C41 /* Podfile in Resources */,
 				E82940EB1D1FB297008D7C41 /* Main.storyboard in Resources */,
@@ -600,6 +614,7 @@
 				4A8AE4A71D683C9300ACAE9F /* 다이어리_디테일_뷰컨트롤러.swift in Sources */,
 				4ABA17C51D44D08000C509BC /* Dimension.swift in Sources */,
 				4A8AE4A91D6854E400ACAE9F /* 다이어리_추가_뷰컨트롤러.swift in Sources */,
+				4A487E911D70A24100CB65A1 /* 비밀번호.swift in Sources */,
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
 				4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,

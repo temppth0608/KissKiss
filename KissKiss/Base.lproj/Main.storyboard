@@ -143,7 +143,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="G5Q-48-usH">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sa3-8B-P9x" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="루트" automaticallyAdjustsScrollViewInsets="NO" id="sa3-8B-P9x" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ET5-fL-r5F"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

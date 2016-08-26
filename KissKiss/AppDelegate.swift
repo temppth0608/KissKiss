@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         print(#function)
+        
+        let 패스워드뷰컨트롤러 = UIStoryboard(name: "Password", bundle: nil).instantiateViewControllerWithIdentifier("암호") as! 비밀번호_뷰컨트롤러
+        
+        window?.rootViewController = 패스워드뷰컨트롤러
+        
         return true
     }
     
