@@ -38,6 +38,11 @@ class Dimension: Object {
     override static func primaryKey()-> String? {
         return "uuid"
     }
+    
+}
 
+class DimensionRealmService {
+    private let realm = try! Realm()
+    private var
 }
  

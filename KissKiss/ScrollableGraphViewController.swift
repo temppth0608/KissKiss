@@ -38,28 +38,31 @@ class ScrollableGraphViewController: UIViewController {
     private func createDarkGraph(frame: CGRect) -> ScrollableGraphView {
         let graphView = ScrollableGraphView(frame: frame)
         
-        graphView.backgroundFillColor = UIColor.colorFromHex("#333333")
+        graphView.backgroundFillColor = UIColor.colorFromHex("#FFFFFF")
         
-        graphView.lineWidth = 1
-        graphView.lineColor = UIColor.colorFromHex("#777777")
-        graphView.lineStyle = ScrollableGraphViewLineStyle.Smooth
+        graphView.lineWidth = 3
+        graphView.lineColor = UIColor.colorFromHex("#E0487E")
+        graphView.lineStyle = ScrollableGraphViewLineStyle.Straight
         
-        graphView.shouldFill = true
-        graphView.fillType = ScrollableGraphViewFillType.Gradient
-        graphView.fillColor = UIColor.colorFromHex("#555555")
-        graphView.fillGradientType = ScrollableGraphViewGradientType.Linear
-        graphView.fillGradientStartColor = UIColor.colorFromHex("#555555")
-        graphView.fillGradientEndColor = UIColor.colorFromHex("#444444")
+        graphView.shouldFill = false
+//        graphView.fillType = ScrollableGraphViewFillType.Gradient
+//        graphView.fillColor = UIColor.colorFromHex("#555555")
+//        graphView.fillGradientType = ScrollableGraphViewGradientType.Radial
+//        graphView.fillGradientStartColor = UIColor.colorFromHex("#E0487E")
+//        graphView.fillGradientEndColor = UIColor.colorFromHex("#E0487E")
         
         graphView.dataPointSpacing = 80
         graphView.dataPointSize = 2
-        graphView.dataPointFillColor = UIColor.whiteColor()
+        //graphView.dataPointFillColor = UIColor.blackColor()
+        graphView.dataPointFillColor = UIColor.colorFromHex("#E0487E")
         
         graphView.referenceLineLabelFont = UIFont.boldSystemFontOfSize(8)
-        graphView.referenceLineColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
-        graphView.referenceLineLabelColor = UIColor.whiteColor()
+        //graphView.referenceLineColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
+        //graphView.referenceLineLabelColor = UIColor.whiteColor()
+        graphView.referenceLineLabelColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+        graphView.referenceLineColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         graphView.numberOfIntermediateReferenceLines = 5
-        graphView.dataPointLabelColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
+        graphView.dataPointLabelColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         
         graphView.shouldAnimateOnStartup = true
         graphView.shouldAdaptRange = true

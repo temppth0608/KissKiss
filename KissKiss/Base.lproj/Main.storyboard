@@ -149,7 +149,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="cOg-Bd-asD">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.28235294119999998" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="rDB-2A-xu0" kind="relationship" relationship="viewControllers" id="e37-3G-cyC"/>

@@ -11,14 +11,13 @@ import UIKit
 // MARK: - Property
 
 class DimensionCreateViewController: UIViewController {
-
-    @IBOutlet weak var dateButton: UIButton!
     
-    @IBOutlet weak var weightButton: UIButton!
+    @IBOutlet weak var date: UIButton!
+    @IBOutlet weak var weight: UIButton!
+    @IBOutlet weak var waist: UIButton!
+    @IBOutlet weak var arm: UIButton!
+    @IBOutlet weak var leg: UIButton!
     
-    var pickerDataSource = ["White", "Red", "Green", "Blue"];
-    
-  
 }
 
 // MARK: - Recycle Function
@@ -27,7 +26,7 @@ extension DimensionCreateViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        date.setTitle(DateFormat.strigFromDate(NSDate(), 포멧: .피커포멧), forState: .Normal)
         // Do any additional setup after loading the view.
     }
     
@@ -45,21 +44,25 @@ extension DimensionCreateViewController {
 extension DimensionCreateViewController {
     
     @IBAction func onClickCloseButton(sender: AnyObject) {
+        
+        
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func onClickDate(sender: AnyObject) {
-        showDatePicker()
+    @IBAction func onClickDate(sender: UIButton) {
+        showDatePicker(of: sender)
     }
     
-    @IBAction func onClickWeight(sender: AnyObject) {
-        showKgPicker()
+    @IBAction func onClickDimension(sender: UIButton) {
+        showDimensionPicker(of: sender)
     }
     
+    @IBAction func onClickSave(sender: AnyObject) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
-    
-    
-
     
 }
 
@@ -67,19 +70,22 @@ extension DimensionCreateViewController {
 
 extension DimensionCreateViewController {
     
-    private func showDatePicker() {
+    private func showDatePicker(of sender: UIButton) {
         Picker.Date.show(self.view) { selecedDate in
-            self.dateButton.setTitle(DateFormat.strigFromDate(selecedDate, 포멧: .피커포멧), forState: .Normal)
+            sender.setTitle(DateFormat.strigFromDate(selecedDate, 포멧: .피커포멧), forState: .Normal)
         }
     }
     
-    private func showKgPicker() {
-//        KgPicker.show(self.view) { currentKg in
-//            self.dateButton.setTitle(currentKg)
-//        }
+    private func showDimensionPicker(of sender: UIButton) {
+        guard let senderIdentifier = sender.restorationIdentifier else {
+            return
+        }
         
-
-        
+        Picker.Dimension.show(view, senderIdentifier: senderIdentifier) { selectedDimension in
+            if let selectedDimension = selectedDimension {
+                sender.setTitle(selectedDimension, forState: .Normal)
+            }
+        }
     }
 
 }
@@ -90,8 +96,6 @@ extension DimensionCreateViewController {
 
 }
 
-// MARK: - WKWebBiewDelegate
-
-extension DimensionCreateViewController: UIWebViewDelegate {
-
+extension DimensionCreateViewController {
+    
 }
