@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LGAlertView
 
 // MARK: - Property
 class 다이어리_테이블_뷰컨트롤러: UIViewController {
@@ -21,6 +22,27 @@ extension 다이어리_테이블_뷰컨트롤ᄅ�
         super.viewWillAppear(animated)
         
         화면갱신()
+    }
+}
+
+// MARK: - IBAction function
+extension 다이어리_테이블_뷰컨트롤러 {
+    @IBAction func 더보기버튼_탭(sender: UIButton) {
+        if let 인덱스 = sender.인덱스패스() {
+            let alertView = LGAlertView(title: "타이틀", message: "다이어리를 수정/삭제하시겠습니까?", style: LGAlertViewStyle.ActionSheet, buttonTitles: ["수정"], cancelButtonTitle: "취소", destructiveButtonTitle: "삭제")
+            alertView.actionHandler = { (alertView, title, index) in
+                // TODO: 수정
+            }
+            alertView.destructiveHandler = { _ in
+                let uuid = self.다이어리데이터제공자.식별자(인덱스: 인덱스.row)
+                
+                if let uuid = uuid {
+                    self.다이어리데이터제공자.다이어리_삭제(uuid)
+                    self.화면갱신()
+                }
+            }
+            alertView.showAnimated(true, completionHandler: nil)
+        }
     }
 }
 
@@ -41,6 +63,7 @@ extension 다이어리_테이블_뷰컨트롤ᄅ�
         let 셀 = tableView.dequeueReusableCellWithIdentifier("테이블셀", forIndexPath: indexPath) as! 다이어리_테이블_셀
         let 다이어리 = 다이어리데이터제공자.다이어리_가져오기(인덱스: indexPath.item)
         셀.다이어리정보 = 다이어리
+        셀.인덱스패스저장(indexPath)
         
         return 셀
     }
@@ -64,6 +87,11 @@ class 다이어리_테이블_셀: UITableViewCell {
         didSet {
             화면갱신()
         }
+    }
+    
+    override func 인덱스패스저장(인덱스패스: NSIndexPath) {
+        super.인덱스패스저장(인덱스패스)
+        더보기버튼.인덱스패스저장(인덱스패스)
     }
     
     private func 화면갱신() {

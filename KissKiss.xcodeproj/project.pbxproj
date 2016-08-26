@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A487E911D70A24100CB65A1 /* 비밀번호.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A487E901D70A24100CB65A1 /* 비밀번호.swift */; };
+		4A487E941D70AEA100CB65A1 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A487E931D70AEA100CB65A1 /* NSObjectExtension.swift */; };
 		4A60D94B1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */; };
 		4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */; };
 		4A8AE4A31D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		418FB172ECFE6112551FA379 /* Pods-KissKiss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KissKiss.release.xcconfig"; path = "Pods/Target Support Files/Pods-KissKiss/Pods-KissKiss.release.xcconfig"; sourceTree = "<group>"; };
 		4A487E901D70A24100CB65A1 /* 비밀번호.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "비밀번호.swift"; sourceTree = "<group>"; };
+		4A487E931D70AEA100CB65A1 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		4A60D94A1D68216500317D1E /* 다이어리_메인_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_메인_뷰컨트롤러.swift"; sourceTree = "<group>"; };
 		4A8AE4A01D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_컬렉션_뷰컨트롤러.swift"; sourceTree = "<group>"; };
 		4A8AE4A21D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "다이어리_테이블_뷰컨트롤러.swift"; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 				4A487E901D70A24100CB65A1 /* 비밀번호.swift */,
 			);
 			name = "패스워드";
+			sourceTree = "<group>";
+		};
+		4A487E921D70AE9000CB65A1 /* NSObjectExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4A487E931D70AEA100CB65A1 /* NSObjectExtension.swift */,
+			);
+			name = NSObjectExtension;
 			sourceTree = "<group>";
 		};
 		4A60D9471D68212100317D1E /* 메인 */ = {
@@ -314,6 +324,7 @@
 		E81B42C01D32B71A005F0DCC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4A487E921D70AE9000CB65A1 /* NSObjectExtension */,
 				4A9531041D69CA6E00C5702E /* RealmExtension */,
 				80563DE71D62241500A6E359 /* Custom */,
 				650BA23F1D44EFDF00980699 /* StringExtension */,
@@ -617,6 +628,7 @@
 				4A487E911D70A24100CB65A1 /* 비밀번호.swift in Sources */,
 				B081E0781D413F3300B8B965 /* UIColor+colorFromHex.swift in Sources */,
 				4A8AE4A11D6823FB00ACAE9F /* 다이어리_컬렉션_뷰컨트롤러.swift in Sources */,
+				4A487E941D70AEA100CB65A1 /* NSObjectExtension.swift in Sources */,
 				B081E0761D413F3300B8B965 /* ScrollableGraphView.swift in Sources */,
 				E82940E61D1FB297008D7C41 /* AppDelegate.swift in Sources */,
 				4A8AE4A31D68240600ACAE9F /* 다이어리_테이블_뷰컨트롤러.swift in Sources */,

@@ -109,6 +109,6 @@ class 다이어리_데이터_제공자 {
     }
     
     private func 다이어리_찾기(uuid: String) -> Diary? {
-        return realm.objects(Diary.self).filter("uuid == \(uuid)").first ?? nil
+        return realm.objects(Diary.self).filter("uuid == '\(uuid)'").first ?? nil
     }
 }
