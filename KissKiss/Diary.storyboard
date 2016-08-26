@@ -91,6 +91,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="컬렉션뷰" destination="LXM-fo-AdF" id="x51-CY-TwN"/>
                         <segue destination="1Yf-6S-K1f" kind="show" identifier="디테일" id="JX4-3G-rzP"/>
                     </connections>
                 </viewController>
@@ -128,7 +129,7 @@
                                                         <constraint firstAttribute="height" constant="97" id="igP-us-1Mc"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZu-Q8-boO" userLabel="다이어리이미지뷰">
+                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZu-Q8-boO" userLabel="다이어리이미지뷰">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="370.5"/>
                                                 </imageView>
                                             </subviews>
@@ -179,15 +180,15 @@
                                             <outlet property="오늘날짜" destination="d2p-M4-71s" id="mVp-v5-d6L"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="내용셀" rowHeight="126" id="Dpe-OE-r9g" customClass="내용셀" customModule="KissKiss" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="455" width="375" height="126"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="내용셀" rowHeight="101" id="Dpe-OE-r9g" customClass="내용셀" customModule="KissKiss" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="455" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dpe-OE-r9g" id="qwl-vt-uli">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="일기쓰기..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-B6-eVV">
-                                                    <rect key="frame" x="15" y="8" width="345" height="118"/>
+                                                    <rect key="frame" x="15" y="8" width="345" height="93"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -286,7 +287,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="테이블셀" rowHeight="450" id="CKO-zD-u7J" customClass="다이어리_테이블_셀" customModule="KissKiss" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="테이블셀" rowHeight="450" id="CKO-zD-u7J" customClass="다이어리_테이블_셀" customModule="KissKiss" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="450"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CKO-zD-u7J" id="Gc5-vn-YMJ">
@@ -372,6 +373,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="테이블뷰" destination="ju4-26-ArX" id="cFT-oA-xes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ye-aN-FWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -427,18 +431,19 @@
                                     <constraint firstAttribute="bottom" secondItem="fT9-GP-jl3" secondAttribute="bottom" id="ybm-Y3-1xS"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXh-Gy-FUU" userLabel="다이어리이미지">
-                                <rect key="frame" x="0.0" y="50" width="375" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="36j-k9-Jab"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXa-6X-x4A" userLabel="다이어리내용">
                                 <rect key="frame" x="8" y="358" width="359" height="309"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXh-Gy-FUU" userLabel="다이어리이미지">
+                                <rect key="frame" x="0.0" y="50" width="375" height="300"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="36j-k9-Jab"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

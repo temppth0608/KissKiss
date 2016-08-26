@@ -43,6 +43,6 @@ class Dimension: Object {
 
 class DimensionRealmService {
     private let realm = try! Realm()
-    private var
+//    private var
 }
  

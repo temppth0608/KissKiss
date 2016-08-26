@@ -14,7 +14,7 @@ class 다이어리_디테일_뷰컨트로
     @IBOutlet weak var 다이어리이미지뷰: UIImageView!
     @IBOutlet weak var 다이어리내용: UILabel!
     
-    var 데이터: 다이어리?
+    var 데이터: Diary?
 }
 
 // MARK: - Recycle Function
@@ -37,8 +37,9 @@ extension 다이어리_디테일_뷰컨트�
     private func 화면갱신() {
         if let 데이터 = self.데이터 {
             다이어리날짜.text = DateFormat.strigFromDate(데이터.date, 포멧: .다이어리날짜포멧)
-            //TODO: 변경필요
-            다이어리이미지뷰.image = UIImage(named: "btn_camera")
+            if let 이미지데이터 = 데이터.photoData {
+                다이어리이미지뷰.image = UIImage(data: 이미지데이터)
+            }
             다이어리내용.text = 데이터.contents
         }
     }

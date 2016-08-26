@@ -10,30 +10,45 @@ import UIKit
 
 // MARK: - Property
 class 다이어리_컬렉션_뷰컨트롤러: UIViewController {
+    @IBOutlet private weak var 컬렉션뷰: UICollectionView!
+    
     let 다이어리데이터제공자 = 다이어리_데이터_제공자()
 }
 
-// MARK: - public function
+// MARK: - life cycle
 extension 다이어리_컬렉션_뷰컨트롤러 {
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        화면갱신()
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "디테일" {
             let vc = segue.destinationViewController as! 다이어리_디테일_뷰컨트롤러
             if let 인덱스 = sender as? Int {
-                vc.데이터 = 다이어리데이터제공자.다이어리목록[인덱스]
+                vc.데이터 = 다이어리데이터제공자.다이어리_가져오기(인덱스: 인덱스)
             }
         }
+    }
+}
+
+// MARK: - private function
+extension 다이어리_컬렉션_뷰컨트롤러 {
+    private func 화면갱신() {
+        컬렉션뷰.reloadData()
     }
 }
 
 // MARK: - UICollectionViewDataSource
 extension 다이어리_컬렉션_뷰컨트롤러: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 다이어리데이터제공자.다이어리목록.count
+        return 다이어리데이터제공자.다이어리목록_갯수()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let 셀 = collectionView.dequeueReusableCellWithReuseIdentifier("컬렉션뷰셀", forIndexPath: indexPath) as! 다이어리_컬렉션_셀
-        let 다이어리 = 다이어리데이터제공자.다이어리목록[indexPath.item]
+        let 다이어리 = 다이어리데이터제공자.다이어리_가져오기(인덱스: indexPath.item)
         셀.다이어리정보 = 다이어리
         
         return 셀
@@ -61,7 +76,7 @@ class 다이어리_컬렉션_셀: UICollectionViewCell {
     @IBOutlet weak var 다이어리이미지뷰: UIImageView!
     @IBOutlet weak var 다이어리날짜: UILabel!
     
-    var 다이어리정보: 다이어리? {
+    var 다이어리정보: Diary? {
         didSet {
             화면갱신()
         }
@@ -69,8 +84,9 @@ class 다이어리_컬렉션_셀: UICollectionViewCell {
     
     private func 화면갱신() {
         if let 데이터 = self.다이어리정보 {
-            //TODO: 변경필요
-            다이어리이미지뷰.image = UIImage(named: "btn_camera")
+            if let 이미지데이터 = 데이터.photoData {
+                다이어리이미지뷰.image = UIImage(data: 이미지데이터)
+            }
             다이어리날짜.text = DateFormat.strigFromDate(데이터.date, 포멧: .다이어리날짜포멧)
         }
     }

@@ -29,11 +29,15 @@ enum 셀_스타일 {
 class 다이어리_추가_뷰컨트롤러: UIViewController, UINavigationControllerDelegate {
     @IBOutlet private weak var 테이블뷰: UITableView!
     
+    var 다이어리데이터제공자 = 다이어리_데이터_제공자()
+    
     var 다이어리이미지: UIImage? {
         didSet {
             테이블뷰.reloadData()
         }
     }
+    
+    var 다이어리내용: String = ""
     
     let 셀목록 :[셀_스타일] = [.사진셀, .날짜셀, .내용셀]
 }
@@ -56,15 +60,6 @@ extension 다이어리_추가_뷰컨트롤�
         
         presentViewController(이미지피커, animated: true, completion: nil)
     }
-    
-    private func 화면애니메이션(올라감: Bool, 완료됨: (Void -> Void)?) {
-        // TODO: 상수 변수로 변경
-        let 움질일높이: CGFloat = 371.0
-        let 뷰높이 = self.view.frame.origin.y
-        UIView.animateWithDuration(0.3) {
-            self.view.frame.origin.y = 올라감 ? 뷰높이 - 움질일높이 : 뷰높이 + 움질일높이
-        }
-    }
 }
 
 // MARK: - IBAction
@@ -73,7 +68,19 @@ extension 다이어리_추가_뷰컨트롤�
         dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func 저장_버튼_탭(sender: UIButton) {
-        print(#function)
+        let 오늘날짜 = NSDate()
+        
+        let 다이어리이미지데이터: NSData?
+        if let 이미지 = 다이어리이미지 {
+            다이어리이미지데이터 = UIImagePNGRepresentation(이미지)
+        } else {
+            다이어리이미지데이터 = nil
+        }
+        
+        let 다이어리내용 = self.다이어리내용
+        다이어리데이터제공자.다이어리_추가하기(오늘날짜, photoData: 다이어리이미지데이터, contents: 다이어리내용)
+        
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
@@ -141,13 +148,16 @@ extension 다이어리_추가_뷰컨트롤�
 }
 
 extension 다이어리_추가_뷰컨트롤러: UITextViewDelegate {
-    func textViewDidBeginEditing(textView: UITextView) {
-        화면애니메이션(true, 완료됨: nil)
+    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        let placeHolder = "일기쓰기..."
+        if placeHolder == textView.text {
+            textView.text = ""
+        }
+        
+        return true
     }
-    
-    func textViewDidEndEditing(textView: UITextView) {
-        화면애니메이션(false, 완료됨: nil)
-        resignFirstResponder()
+    func textViewDidChange(textView: UITextView) {
+        다이어리내용 = textView.text
     }
 }
 
