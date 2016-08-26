@@ -18,9 +18,6 @@ class MainGraphViewController: UIViewController{
     
     @IBOutlet weak var SectionButton: UIButton!
     
-    private let sectionPickerList = ["몸무게 그래프","허리 그래프","다리 그래프", "팔 그래프"]
-    
-    
 }
 
 // MARK: - IBAction
@@ -30,8 +27,6 @@ extension MainGraphViewController {
     @IBAction func onClickSection(sender: UIButton) {
         showSectionPicker()
     }
-
-
     
     @IBAction func showComponent(sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -49,25 +44,13 @@ extension MainGraphViewController {
 }
 
 
-extension MainGraphViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension MainGraphViewController {
     
     private func showSectionPicker() {
-        Picker.List.show(view, dataSource: self, delegate: self) { selectedIndex in
-            if let selectedIndex = selectedIndex {
-                self.SectionButton.setTitle(self.sectionPickerList[selectedIndex], forState: .Normal)
+        Picker.List.show(view) { selected in
+            if let selected = selected {
+                self.SectionButton.setTitle(selected, forState: .Normal)
             }
         }
-    }
-    
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return sectionPickerList.count
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return sectionPickerList[row]
     }
 }

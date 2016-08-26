@@ -51,6 +51,9 @@
                                     <color key="titleColor" red="0.98546450576766198" green="0.97720786136592508" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.97755841898938178" green="0.95776454783749665" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickSave:" destination="51U-Qe-svy" eventType="touchUpInside" id="azT-uB-G7x"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="caH-vS-0MX">
                                 <rect key="frame" x="0.0" y="77" width="375" height="380"/>
@@ -76,7 +79,7 @@
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onClickDate:" destination="51U-Qe-svy" eventType="touchUpInside" id="r1B-hB-WtP"/>
+                                                    <action selector="onClickDate:" destination="51U-Qe-svy" eventType="touchUpInside" id="Qfb-Fb-XqL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,7 +97,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLH-ka-Xxv">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="weight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLH-ka-Xxv">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="13" minY="10" maxX="0.0" maxY="10"/>
@@ -103,7 +106,7 @@
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="onClickWeight:" destination="51U-Qe-svy" eventType="touchUpInside" id="bJp-wd-cOw"/>
+                                                    <action selector="onClickDimension:" destination="51U-Qe-svy" eventType="touchUpInside" id="fcz-1x-FPj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -121,13 +124,16 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRt-fL-LaQ">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="waist" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRt-fL-LaQ">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="13" minY="10" maxX="0.0" maxY="10"/>
                                                 <state key="normal" title="허리 치수를 입력해주세요">
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickDimension:" destination="51U-Qe-svy" eventType="touchUpInside" id="bSJ-yl-1bu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,13 +150,16 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-MK-Eew">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="arm" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-MK-Eew">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="13" minY="10" maxX="0.0" maxY="10"/>
                                                 <state key="normal" title="팔 치수를 입력해주세요">
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickDimension:" destination="51U-Qe-svy" eventType="touchUpInside" id="kcC-y4-yAO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -167,13 +176,16 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fp-Aj-DBp">
+                                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="leg" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fp-Aj-DBp">
                                                 <rect key="frame" x="0.0" y="30" width="375" height="38"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="13" minY="10" maxX="0.0" maxY="10"/>
                                                 <state key="normal" title="다리 치수를 입력해주세요">
                                                     <color key="titleColor" red="0.71085088159999998" green="0.71085088159999998" blue="0.71085088159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="onClickDimension:" destination="51U-Qe-svy" eventType="touchUpInside" id="JZH-Tz-gmw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -200,8 +212,11 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="dateButton" destination="f6U-14-de1" id="guX-zB-bg1"/>
-                        <outlet property="weightButton" destination="WLH-ka-Xxv" id="UpZ-rS-pEw"/>
+                        <outlet property="arm" destination="z1v-MK-Eew" id="c8t-Db-tgs"/>
+                        <outlet property="date" destination="f6U-14-de1" id="kk1-ob-cg4"/>
+                        <outlet property="leg" destination="8fp-Aj-DBp" id="y0u-eb-X57"/>
+                        <outlet property="waist" destination="zRt-fL-LaQ" id="hd8-eA-oc8"/>
+                        <outlet property="weight" destination="WLH-ka-Xxv" id="jJU-W3-ii0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyh-9t-pmg" userLabel="First Responder" sceneMemberID="firstResponder"/>

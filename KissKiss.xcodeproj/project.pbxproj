@@ -163,12 +163,12 @@
 			name = StringExtension;
 			sourceTree = "<group>";
 		};
-		80563DE21D6204E100A6E359 /* 생성 */ = {
+		80563DE21D6204E100A6E359 /* 수치입력 */ = {
 			isa = PBXGroup;
 			children = (
 				80563DE01D62036900A6E359 /* DimensionCreateViewController.swift */,
 			);
-			name = "생성";
+			name = "수치입력";
 			sourceTree = "<group>";
 		};
 		80563DE71D62241500A6E359 /* Custom */ = {
@@ -191,18 +191,26 @@
 		80759A961D685CD400EDAC74 /* 메인 */ = {
 			isa = PBXGroup;
 			children = (
-				80759A971D685D3900EDAC74 /* Container */,
+				80759A981D68A53D00EDAC74 /* 정보 */,
+				80759A971D685D3900EDAC74 /* 그래프 */,
 				B00D67A71D4514B10013D45B /* MainGraphViewController.swift */,
 			);
 			name = "메인";
 			sourceTree = "<group>";
 		};
-		80759A971D685D3900EDAC74 /* Container */ = {
+		80759A971D685D3900EDAC74 /* 그래프 */ = {
 			isa = PBXGroup;
 			children = (
 				B081E0741D413F3300B8B965 /* ScrollableGraphViewController.swift */,
 			);
-			name = Container;
+			name = "그래프";
+			sourceTree = "<group>";
+		};
+		80759A981D68A53D00EDAC74 /* 정보 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "정보";
 			sourceTree = "<group>";
 		};
 		87357CA398DF6BD65267A7F6 /* Pods */ = {
@@ -304,8 +312,7 @@
 			children = (
 				80759A961D685CD400EDAC74 /* 메인 */,
 				80759A941D685C6600EDAC74 /* 라이브러리 */,
-				80563DE71D62241500A6E359 /* Custom */,
-				80563DE21D6204E100A6E359 /* 생성 */,
+				80563DE21D6204E100A6E359 /* 수치입력 */,
 			);
 			name = "그래프";
 			sourceTree = "<group>";

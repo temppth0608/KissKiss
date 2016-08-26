@@ -35,13 +35,16 @@
                                             <segment title="주"/>
                                             <segment title="월"/>
                                         </segments>
-                                        <color key="tintColor" red="0.41494191756596854" green="0.41494191756596854" blue="0.41494191756596854" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.27843137254901962" green="0.30980392156862746" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="showComponent:" destination="ATc-Rg-wfw" eventType="valueChanged" id="16B-5h-yCM"/>
                                         </connections>
                                     </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beg-x1-4QK">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beg-x1-4QK">
                                         <rect key="frame" x="16" y="14.5" width="111" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="Szd-uK-JW5"/>
+                                        </constraints>
                                         <state key="normal" title="몸무게 그래프" image="arrow-symbols-icons">
                                             <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -61,36 +64,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dlh-Qe-jyN">
                                 <rect key="frame" x="0.0" y="50" width="375" height="617"/>
                                 <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-lb-c0J" userLabel="Graph Container View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="371"/>
-                                        <connections>
-                                            <segue destination="sHC-e9-Gqc" kind="embed" id="HLb-eN-4Bw"/>
-                                        </connections>
-                                    </containerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pC9-3i-Lb2">
                                         <rect key="frame" x="0.0" y="369" width="375" height="247.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lT3-8n-Xye" userLabel="Date View">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016년 00월 00일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-Mb-RWG">
-                                                        <rect key="frame" x="87" y="7" width="201" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="201" id="Pgc-zK-FXh"/>
-                                                            <constraint firstAttribute="height" constant="21" id="mLU-Q2-3tc"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="iNt-ma-vUU"/>
-                                                    <constraint firstItem="YLd-Mb-RWG" firstAttribute="centerX" secondItem="lT3-8n-Xye" secondAttribute="centerXWithinMargins" id="lIk-eN-TiU"/>
-                                                    <constraint firstItem="YLd-Mb-RWG" firstAttribute="centerY" secondItem="lT3-8n-Xye" secondAttribute="centerYWithinMargins" id="msC-eL-9B7"/>
-                                                </constraints>
-                                            </view>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-Og-PoJ" userLabel="Three Info Container View">
                                                 <rect key="frame" x="0.0" y="35" width="375" height="212.5"/>
                                                 <connections>
@@ -103,6 +79,27 @@
                                                     <segue destination="VmW-Uv-vfd" kind="embed" identifier="" id="h2i-8X-K5q"/>
                                                 </connections>
                                             </containerView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lT3-8n-Xye" userLabel="Date View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09월 08일 토요일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLd-Mb-RWG">
+                                                        <rect key="frame" x="87" y="7" width="201" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="201" id="Pgc-zK-FXh"/>
+                                                            <constraint firstAttribute="height" constant="21" id="mLU-Q2-3tc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.94117647058823528" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="iNt-ma-vUU"/>
+                                                    <constraint firstItem="YLd-Mb-RWG" firstAttribute="centerX" secondItem="lT3-8n-Xye" secondAttribute="centerXWithinMargins" id="lIk-eN-TiU"/>
+                                                    <constraint firstItem="YLd-Mb-RWG" firstAttribute="centerY" secondItem="lT3-8n-Xye" secondAttribute="centerYWithinMargins" id="msC-eL-9B7"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -119,6 +116,12 @@
                                             <constraint firstAttribute="trailing" secondItem="lT3-8n-Xye" secondAttribute="trailing" id="wqy-Td-VJE"/>
                                         </constraints>
                                     </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-lb-c0J" userLabel="Graph Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="371"/>
+                                        <connections>
+                                            <segue destination="sHC-e9-Gqc" kind="embed" id="HLb-eN-4Bw"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -185,25 +188,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="212.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dCE-tH-OHI">
-                                <rect key="frame" x="85" y="86" width="204" height="42"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dCE-tH-OHI">
+                                <rect key="frame" x="47" y="79" width="280" height="55"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-G2-ju0">
-                                        <rect key="frame" x="0.0" y="0.0" width="92" height="42"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="WO3-G2-ju0">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="오늘 몸무게" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8b-gN-3Ek">
-                                                <rect key="frame" x="0.0" y="0.0" width="92" height="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="18"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="92" id="Jb4-pK-vqU"/>
+                                                    <constraint firstAttribute="width" constant="110" id="Jb4-pK-vqU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.00kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo8-jQ-b1z">
-                                                <rect key="frame" x="0.0" y="18" width="92" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="040.00 KG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo8-jQ-b1z">
+                                                <rect key="frame" x="0.0" y="31" width="110" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.28235294119999998" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -211,22 +214,22 @@
                                             <constraint firstItem="Zo8-jQ-b1z" firstAttribute="width" secondItem="l8b-gN-3Ek" secondAttribute="width" id="cxe-Wn-zqe"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-lZ-l4O">
-                                        <rect key="frame" x="112" y="0.0" width="92" height="42"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="fV6-lZ-l4O">
+                                        <rect key="frame" x="170" y="0.0" width="110" height="55"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 몸무게" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRz-m2-G8n">
-                                                <rect key="frame" x="0.0" y="0.0" width="92" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 BMI 지수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRz-m2-G8n">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="18"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="92" id="LPe-pS-IwE"/>
+                                                    <constraint firstAttribute="width" constant="110" id="LPe-pS-IwE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.00kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xI-2j-hx0">
-                                                <rect key="frame" x="0.0" y="18" width="92" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="018.50 BMI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xI-2j-hx0">
+                                                <rect key="frame" x="0.0" y="31" width="110" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.2784313725" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -273,13 +276,13 @@
                                                     <constraint firstAttribute="width" constant="92" id="er5-cj-lSJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.00kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpr-IS-azo">
                                                 <rect key="frame" x="0.0" y="18" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -297,13 +300,13 @@
                                                     <constraint firstAttribute="width" constant="92" id="STg-Dd-CCS"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.00kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytw-7A-f5Z">
                                                 <rect key="frame" x="0.0" y="18" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -321,13 +324,13 @@
                                                     <constraint firstAttribute="width" constant="92" id="J9c-R6-bqO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40.00kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S63-ih-BN7">
                                                 <rect key="frame" x="0.0" y="18" width="92" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
