@@ -62,11 +62,11 @@
             </objects>
             <point key="canvasLocation" x="2389.5" y="-462"/>
         </scene>
-        <!--Gragh-->
+        <!--그래프-->
         <scene sceneID="4ZO-Gt-SLh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDB-2A-xu0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Gragh" id="NWJ-Ae-x9z"/>
+                    <tabBarItem key="tabBarItem" title="그래프" image="btn_graph_normal" selectedImage="btn_graph_pressed" id="NWJ-Ae-x9z"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nys-in-RBp">
@@ -147,9 +147,16 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ET5-fL-r5F"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="cOg-Bd-asD">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" itemPositioning="fill" id="cOg-Bd-asD">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.28235294119999998" green="0.30980392159999998" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="rDB-2A-xu0" kind="relationship" relationship="viewControllers" id="e37-3G-cyC"/>
@@ -161,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="898.5" y="329.5"/>
         </scene>
-        <!--Diary-->
+        <!--다이어리-->
         <scene sceneID="9oi-CA-8an">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="owx-tl-uwY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Diary" id="WUA-jG-z6r"/>
+                    <tabBarItem key="tabBarItem" title="다이어리" image="btn_diary_normal" selectedImage="btn_diary_pressed" id="WUA-jG-z6r"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hIp-yg-ofv">
@@ -223,11 +230,11 @@
             </objects>
             <point key="canvasLocation" x="2341" y="1191"/>
         </scene>
-        <!--Set-->
+        <!--설정-->
         <scene sceneID="rDi-fo-TnW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sLx-MF-PRj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Set" id="M71-RT-dJ3"/>
+                    <tabBarItem key="tabBarItem" title="설정" image="btn_setting_normal" selectedImage="btn_setting_pressed" id="M71-RT-dJ3"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgg-1L-baV">
@@ -245,4 +252,13 @@
             <point key="canvasLocation" x="1480.5" y="1190.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_diary_normal" width="17" height="22"/>
+        <image name="btn_diary_pressed" width="17" height="21"/>
+        <image name="btn_graph_normal" width="23" height="22"/>
+        <image name="btn_graph_pressed" width="23" height="22"/>
+        <image name="btn_setting_normal" width="23" height="23"/>
+        <image name="btn_setting_pressed" width="23" height="23"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
